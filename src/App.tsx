@@ -12,10 +12,12 @@ function App() {
         {
             path: "/",
             element: <TopPage/>,
+            errorElement: <TopPage/>
         },
         {
             path: "/GeolocationWatchPosition",
-            element: <GeolocationWatchPosition/>
+            element: <GeolocationWatchPosition/>,
+            errorElement: <TopPage/>
         }
     ])
     return <Container>
