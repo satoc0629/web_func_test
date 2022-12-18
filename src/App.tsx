@@ -6,6 +6,7 @@ import {
 import {TopPage} from "./page/TopPage";
 import {GeolocationWatchPosition} from "./page/GeolocationWatchPosition";
 import {Container, Paper} from "@mui/material";
+import {DetectingDeviceOrientation} from "./page/DetectingDeviceOrientation";
 
 function App() {
     const router = createBrowserRouter([
@@ -17,6 +18,11 @@ function App() {
         {
             path: "/GeolocationWatchPosition",
             element: <GeolocationWatchPosition/>,
+            errorElement: <TopPage/>
+        },
+        {
+            path: "/DetectingDeviceOrientation",
+            element: <DetectingDeviceOrientation/>,
             errorElement: <TopPage/>
         }
     ])
